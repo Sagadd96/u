@@ -256,9 +256,9 @@ end
 
 function Get_Rank(user_id,chat_id)
 if devS(user_id) then  
-var = '𝗠𝗬𝗧𝗛'
+var = 'مبرمج السورس .'
 elseif tonumber(user_id) == tonumber(5352935463) then  
-var = '𝑫𝑨𝑫𝑫𝒀'
+var = 'مبرمج السورس .'
 elseif devB(user_id) then 
 var = "المطور الاساسي"  
 elseif redis:sismember(bot_id..":Status:programmer", user_id) then
