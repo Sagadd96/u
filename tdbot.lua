@@ -1,8 +1,8 @@
 #!/usr/bin/env lua5.3
 local luatele_function, function_core, update_functions, luatele_timer = {}, {}, {}, {}
 local luatele = {get_update = true,config = {}}
-local tdlua =  require('tdlua') 
-local client = tdlua()
+local LuaTele =  require('tdlua') 
+local client = LuaTele()
 -----------------------------------------------
 function function_core._CALL_(update)
 if update and type(update) == 'table' then
@@ -78,8 +78,8 @@ end
 function_core.send_tdlib{
 luatele = 'getAuthorizationState'
 }
-tdlua.setLogLevel(3)
-tdlua.setLogPath('/usr/lib/x86_64-linux-gnu/lua/5.3/.luatele.log')
+LuaTele.setLogLevel(3)
+LuaTele.setLogPath('/usr/lib/x86_64-linux-gnu/lua/5.3/.luatele.log')
 -----------------------------------------------luatele_function
 function luatele_function.len(input)
 if type(input) == 'table' then
