@@ -4806,7 +4806,7 @@ end
 if Text == "UpSu" then
 bot.answerCallbackQuery(data.id, "• تم تحديث السورس", true)
 os.execute('rm -rf start.lua')
-os.execute('curl -s https://ghp_UMaaNiqiPh3KaMssen9DaClql3UzzD4@raw.githubusercontent.com/SourceTelanD/u/main/start.lua -o start.lua')
+os.execute('curl -s https://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@raw.githubusercontent.com/Sagadd96/u/main/start.lua -o start.lua')
 dofile('start.lua')  
 end
 if Text == "UpBot" then
