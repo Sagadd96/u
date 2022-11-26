@@ -1415,7 +1415,7 @@ keyboard.inline_keyboard = {
 {text = '• ميمز آخر •', callback_data =data.sender_user_id..'/memz'}, 
 },
 }
-https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. chat_id .. '&voice=https://t.me/MemzDavid/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. chat_id .. '&voice=https://t.me/MemzWaTaN/'..Abs..'&caption=/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 bot.deleteMessages(chat_id,{[1]= msg_id})
 end
 end
@@ -2752,7 +2752,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '??𝐸𝐺𝐺𝐴',url="t.me/pp_ppf"}, 
+{text = '??𝐸??𝐺𝐴',url="t.me/pp_ppf"}, 
 },
 }
 }
@@ -16011,7 +16011,7 @@ local MSGID = string.gsub(MsgId,'.0','')
 keyboard = {}  
 keyboard.inline_keyboard = {{{text = '• ميمز آخر •',callback_data = msg.sender_id.user_id..'/memz'}}} 
 local msg_id = msg.id/2097152/0.5 
-https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/MemzDavid/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/MemzWaTaN/'..Abs..'&caption=/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == "افتارات عيال" or text == "افتارات شباب" then
 if not redis:get(bot_id.."trfeh"..msg.chat_id) then
